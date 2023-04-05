@@ -67,8 +67,8 @@ def lambda_handler(event, context):
                 if latest_version == current_version:
                     message = f"Dear concern,\n\n{app_name} is available on Google Play Store and it is upto date. No need to worry.\n\nRegards,\nTeam GIM"
                     print(message)
-                    # subject = f"{app_name} is available in Google Play Store"
-                    # send_email(subject, message)
+                    subject = f"{app_name} is available in Google Play Store"
+                    send_email(subject, message)
                 elif latest_version > current_version:
                     message = f"A new version of {app_name} ({latest_version}) is available on Google Play Store. Please update {app_name} on your device to version {latest_version}."
                     print(message)
