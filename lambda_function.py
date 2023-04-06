@@ -20,7 +20,7 @@ ses_client = boto3.client('ses', region_name=os.environ['AWS_REGION'])
 
 
 # dictionary of app versions
-app_versions = {"app1": "2.1.34", "app2": "2.2.64", "app3": "1.1.18"}
+app_versions = {"app1": "2.1.34", "app2": "2.2.68", "app3": "1.1.18"}
 
 # function to send email
 def send_email(subject, body):
